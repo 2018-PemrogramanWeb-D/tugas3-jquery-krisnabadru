@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+h2 {
+    text-align: center;
+}
+</style>
+<title>Tugas 3 Pemweb</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").animate({left: '250px'});
+    });
+});
+
+</script>
+<script>
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#test3").val("Nama");
+		$("#test4").val("NRP");
+		$("#test5").val("Tempat Asal");
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+
+
+<body>
+<h2>
+Tugas 3 Pemweb
+</h2>
+<button>Geser Gambar</button>
+<div style="height:200px;width:200px;position:absolute;">
+<img src="https://kompas.web.id/wp-content/uploads/2017/09/gambar-pemandangan-menakjubkan.jpg" alt="Pemandangan" width="250" height="160">
+</div>
+
+<p>Input field: <input type="text" id="test3" value="Nama Mahasiswa Hilang"></p>
+<p>Input field: <input type="text" id="test4" value="NRP"></p>
+<p>Input field: <input type="text" id="test5" value="Tempat Asal"></p>
+<button>Enter</button>
+<button id="btn3">Reset Kolom</button>
+
+<h2>Tabel Orang Hilang</h2>
+
+<input id="myInput" type="text" placeholder="Cari nama">
+<br><br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nama Mahasiswa</th>
+      <th>NRP</th>
+      <th>Tempat Tinggal</th>
+    </tr>
+  </thead>
+  <tbody id="myTable">
+    <tr>
+      <td>Andi</td>
+      <td>0123456</td>
+      <td>Jakarta</td>
+    </tr>
+    <tr>
+      <td>Bimoli</td>
+      <td>0123457</td>
+      <td>Bandung</td>
+    </tr>
+    <tr>
+      <td>Capcin</td>
+      <td>0123458</td>
+      <td>Cikampek</td>
+    </tr>
+    <tr>
+      <td>Dimo</td>
+      <td>0011123</td>
+      <td>Surabaya</td>
+    </tr>
+	<tr>
+      <td>Entek</td>
+      <td>0011120</td>
+      <td>England</td>
+    </tr>
+	<tr>
+      <td>Finlaand</td>
+      <td>0020133</td>
+      <td>Luar Negeri</td>
+    </tr>
+	<tr>
+      <td>Gunto</td>
+      <td>9999999</td>
+      <td>Goa hantu</td>
+    </tr>
+  </tbody>
+</table>
+  
+<p>Jika anda menemukan orang hilang, mohon isi dan kirim formulir yang ada.</p>
+
+
+</body>
+</html>
